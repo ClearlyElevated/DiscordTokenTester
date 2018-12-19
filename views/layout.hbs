@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     {{!-- CSS LINKS HERE --}}
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous">
     {{#each stylesheets }}
     <link rel='stylesheet' href='/stylesheets/{{ this }}'>
     {{/each}}
-    {{!-- SCRIPTS LINKS HERE --}}
-    {{#each scripts }}
-    <script src="/javascripts/{{ this }}"></script>
-    {{/each}}
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
     {{{ body }}}
+    {{#each scripts }}
+    <script src="/javascripts/{{ this }}"></script>
+    {{/each}}
   </body>
 </html>
