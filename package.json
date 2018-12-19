@@ -1,0 +1,23 @@
+{
+  "name": "discordtokentester",
+  "version": "1.0.0",
+  "description": "A simple discord.js app to test tokens, get infos about the bot's guilds, etc.",
+  "main": "tester.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdouardCourty/DiscordTokenTester.git"
+  },
+  "author": "Edouard Courty - IIM Paris La Défense",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdouardCourty/DiscordTokenTester/issues"
+  },
+  "homepage": "https://github.com/EdouardCourty/DiscordTokenTester#readme",
+  "dependencies": {
+    "colors": "^1.3.3",
+    "discord.js": "^11.4.2"
+  }
+}
