@@ -7,7 +7,7 @@ $(document).ready(() => {
     // Processing the ajax request
     $.ajax({
       type: 'POST',
-      url: '/',
+      url: '/api',
       data: formData,
       dataType: 'json',
       encode: true
