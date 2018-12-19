@@ -6,13 +6,8 @@ router.get('/', (req, res, next) => {
   res.render('index', {
     title: 'Discord Token Tester',
     stylesheets: ['style.css'],
-    scripts: ['app.js']
+    scripts: ['handler.js']
   })
-})
-
-/* POST home page */
-router.post('/', (req, res, next) => {
-  console.log(req.body)
 })
 
 module.exports = router
