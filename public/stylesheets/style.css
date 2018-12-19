@@ -1,5 +1,50 @@
-@import url(./reset.css);
+@import url(./framework.css);
 
-body {
+body * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+main form {
+  padding-top: 20px;
+  align-self: center;
+}
+
+main form input[name="token"] {
+  background: #cccccc;
+  height: 30px;
+  flex: 0.79;
+  border-radius: 10px;
+  border: 1px #bebebe solid;
+  font-size: 1em;
+}
+
+main form input[name="token"]:focus {
+  background: #d4d4d4;
+}
+
+main form input[type="submit"] {
+  -webkit-appearance: none;
+  background: #23a5fc;
+  height: auto;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main form input[type="submit"]:focus {
+  background: #2f8ac7;
+}
+
+#tester {
+  border-radius: 10px;
+  background: #f0f0f0;
+}
+
+#tester h2 {
+  padding-top: 20px;
 }

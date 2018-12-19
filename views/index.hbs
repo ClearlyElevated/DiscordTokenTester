@@ -1,2 +1,32 @@
-<h1>{{ title }}</h1>
-<p>Welcome to {{ title }}</p>
+<header class="vh10 vw100 flex space-between bg-dark">
+  <h1 class="flex-03 middle white">{{ title }}</h1>
+  
+  <nav class="nav flex-03">
+    <ul class="nav-ul white">
+      <li><a href="">How to use ?</a></li>
+      <li><a href=""><i class="fab fa-github"></i> GitHub</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="vh80 w100 middle">
+
+  <div class="h80 w70 bg-yellow flex column" id="tester">
+    <h2 class="center">Gathering informations on discord bots has never been so simple.</h2>
+
+    <form method="POST" class="flex w90 space-between">
+
+      <input type="text" name="token" placeholder="Enter Discord token here..." class="center">
+      <input type="submit" value="Get informations" id="submitForm" class="white flex-02">
+
+    </form>
+  </div>
+
+</main>
+
+<footer class="vh10 w100 bg-dark white middle">
+  <span>&copy;
+    <a href="https://edouard-courty.alwaysdata.net/" target="_blank" title="Edouard Courty - Fullstack Freelance student">
+    Edouard Courty
+    </a> - All rights reserved</span>
+</footer>
