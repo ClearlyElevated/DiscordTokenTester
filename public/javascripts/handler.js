@@ -7,16 +7,13 @@ $(document).ready(() => {
       url: '/api',
       data: {
         'token': $('input[name=token]').val() 
-      },
-      error: (result, status, error) => {
-        console.log(`Error during request: ${result}`, error)
       }
     })
     .done(data => {
       console.log(data)
     })
-    .fail((req, status) => {
-      console.log(`Failed to execute request ${req}`, status)
+    .fail(xhr => {
+      console.log(xhr.responseText)
     })
     event.preventDefault()
   })
