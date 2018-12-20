@@ -80,6 +80,7 @@ body * {
 .flex-05 {flex: 0.5}
 .flex-06 {flex: 0.6}
 .flex-07 {flex: 0.7}
+.flex-75 {flex: 0.75}
 .flex-08 {flex: 0.8}
 .flex-09 {flex: 0.9}
 .flex-10 {flex: 0.10}
@@ -101,6 +102,7 @@ body * {
 .w70 {width: 70%}
 .w80 {width: 80%}
 .w90 {width: 90%}
+.w95 {width: 95%}
 .w100 {width: 100%}
 
 .h10 {height: 10%}

@@ -32,6 +32,7 @@ main form input[type="submit"] {
   height: auto;
   font-size: 1em;
   border: none;
+  height: 34px;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -40,11 +41,44 @@ main form input[type="submit"]:focus {
   background: #2f8ac7;
 }
 
+main form input[type="submit"]:disabled {
+  background: #2f8ac7;
+}
+
 #tester {
   border-radius: 10px;
   background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 #tester h2 {
   padding-top: 20px;
+}
+
+#botInfo {
+  margin-bottom: 25px;
+}
+
+#resetButton {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 1.2em;
+  background: none;
+  border: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+#resetButton:active {
+  outline: none;
+  color: #464646;
+}
+
+#resetButton:focus {
+  outline: none;
 }

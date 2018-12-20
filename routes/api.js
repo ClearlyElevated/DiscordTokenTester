@@ -1,7 +1,7 @@
 var express = require('express')
 var router = express.Router()
 var _JSON = require('circular-json')
-// Needed to Stringify Circular JSON structures (client)
+// Needed to stringify Circular JSON structures (client)
 
 const Discord = require('discord.js')
 
@@ -11,16 +11,25 @@ router.post('/', (req, res, next) => {
   var client = new Discord.Client({ disableEveryone: true })
 
   client.login(token)
-    .then(() => {
-      res.status(200).send(_JSON.stringify(client)).end()
-    })
     .catch(e => {
       res.status(400).send("Unable to get data from this token.").end()
     })
 
-  // client.on('ready', () => {
-  //   res.status(200).send(_JSON.stringify(client))
-  // }) This gives more informations, but we don't need it on this app.
+  client.on('ready', () => {
+
+    res.status(200).send({
+      user: {
+        tag: client.user.tag,
+        id: client.user.id,
+        avatarURL: client.user.avatarURL
+      },
+      channels: client.channels.array(),
+      users: JSON.parse(_JSON.stringify(client.users.array())),
+      guilds: JSON.parse(_JSON.stringify(client.guilds.array()))
+    }).end()
+
+    client.destroy() // End the Discord connexion
+  })
 })
 
 module.exports = router

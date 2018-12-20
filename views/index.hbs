@@ -11,15 +11,16 @@
 
 <main class="vh80 w100 middle">
 
-  <div class="h80 w70 bg-yellow flex column" id="tester">
-    <h2 class="center">Gathering informations on discord bots has never been so simple.</h2>
+  <div class="h80 w70" id="tester">
+    <div class="h90 w90 flex column flex-02">
+      <h2 class="center">Gathering informations on discord bots has never been so simple.</h2>
 
-    <form class="flex w90 space-between" id="tokenForm">
-
-      <input type="text" name="token" placeholder="Enter Discord token here..." class="center">
-      <input type="submit" value="Get informations" id="submitForm" class="white flex-02">
-
-    </form>
+      <form class="flex w100 space-between" id="tokenForm">
+        <input type="text" name="token" placeholder="Enter Discord token here..." class="center">
+        <input type="submit" value="Get informations" id="submitForm" class="white flex-02">
+      </form>
+    </div>
+    <button id="resetButton"><i class="fas fa-undo"></i></button>
   </div>
 
 </main>
