@@ -61,6 +61,13 @@ main form input[type="submit"]:disabled {
 
 #botInfo {
   margin-bottom: 25px;
+  position: relative;
+}
+
+#botInfo img {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 #resetButton {
