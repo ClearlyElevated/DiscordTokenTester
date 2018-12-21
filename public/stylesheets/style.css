@@ -89,3 +89,28 @@ main form input[type="submit"]:disabled {
 #resetButton:focus {
   outline: none;
 }
+
+#avatarPicture {
+  height: 20%;
+  border-radius: 50%;
+}
+
+.prop {
+  background: #7289da;
+  border-radius: 6px 0 0 6px;
+  padding: 10px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.propVal {
+  background: #cccccc;
+  border-radius: 0 6px 6px 0;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.infoLine {
+  align-items: center;
+  padding: 0 10%;
+}
