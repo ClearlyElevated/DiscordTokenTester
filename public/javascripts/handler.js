@@ -27,20 +27,20 @@ $(document).ready(() => {
   })
 })
 
-var HTMLincrement = (client) => {
+function HTMLincrement (client) {
   $('main form input[type=submit]').prop('disabled', true)
   $('#tester').append('<div class="w90 flex column space-between flex-07" id="botInfo"></div>')
-  $('#botInfo').append(`<img src="${client.user.avatarURL}" id="avatarPicture">`)
   createFields(3)
 
-  $('#infoLine1').append(`<div class="botValue"><span class="prop">TAG</span><span class="propVal">${client.user.tag}</span></div>`)
-  $('#infoLine1').append(`<div class="botValue"><span class="prop">ID</span><span class="propVal">${client.user.id}</span></div>`)
+  $('#infoLine1').append(`<div class="botPill"><span class="prop">TAG</span><span class="prop propVal">${client.user.tag}</span></div>`)
+  $('#infoLine1').append(`<img height=100 src="${client.user.avatarURL}" id="avatarPicture">`)
+  $('#infoLine1').append(`<div class="botPill"><span class="prop">ID</span><span class="prop propVal">${client.user.id}</span></div>`)
 
-  $('#infoLine2').append(`<div class="botValue"><span class="prop">Guilds</span><span class="propVal">${client.guilds.length}</span></div>`)
-  $('#infoLine2').append(`<div class="botValue"><span class="prop">Users</span><span class="propVal">${client.users.length}</span></div>`)
-  $('#infoLine2').append(`<div class="botValue"><span class="prop">Channels</span><span class="propVal">${client.channels.length}</span></div>`)
+  $('#infoLine2').append(`<div class="botPill"><span class="prop">Guilds</span><span class="prop propVal">${client.guilds.length}</span></div>`)
+  $('#infoLine2').append(`<div class="botPill"><span class="prop">Users</span><span class="prop propVal">${client.users.length}</span></div>`)
+  $('#infoLine2').append(`<div class="botPill"><span class="prop">Channels</span><span class="prop propVal">${client.channels.length}</span></div>`)
 
-  $('#infoLine3').append(`<div class="botValue"><span class="prop">Avatar</span><span class="propVal">${client.user.avatarURL}</span></div>`)
+  $('#infoLine3').append(`<div class="botPill" id="inviteLink"><span class="prop">Invite</span><span class="prop propVal"><a href="${client.inviteLink}" target="_blank">Discord's API Invite link</a></span></div>`)
 }
 
 // Utils

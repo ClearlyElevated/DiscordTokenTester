@@ -23,6 +23,7 @@ router.post('/', (req, res, next) => {
         id: client.user.id,
         avatarURL: client.user.avatarURL
       },
+      inviteLink: `https://discordapp.com/api/oauth2/authorize?client_id=${client.user.id}&scope=bot`,
       channels: client.channels.array(),
       users: JSON.parse(_JSON.stringify(client.users.array())),
       guilds: JSON.parse(_JSON.stringify(client.guilds.array()))
