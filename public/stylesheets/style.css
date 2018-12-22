@@ -1,4 +1,4 @@
-@import url(./framework.css);
+@import url(./lib/framework.css);
 
 body * {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
